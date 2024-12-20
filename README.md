@@ -25,7 +25,7 @@ The following figure illustrates the comparison between CONTINA and traditional 
 The figure below provides an overview of the CONTINA method:
 
 <p align="center">
-  <img src="Ccontina.png" alt="CONTINA Method Details">
+  <img src="Contina.png" alt="CONTINA Method Details">
 </p>
 ## Repository Overview
 
