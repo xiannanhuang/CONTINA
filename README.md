@@ -11,7 +11,19 @@ Existing methods for confidence interval modeling often assume that traffic patt
 - **Adaptive Adjustment:** By collecting errors of intervals during deployment, CONTINA dynamically adjusts interval widths based on observed errors, with adaptive rates tailored to regions experiencing different traffic pattern changes.
 - **Theoretical Guarantees:** CONTINA provides coverage guarantees even for regions with the worst coverage, ensuring robust results.
 - **Model Agnostic:** CONTINA can be applied to any prediction model to improve its reliability and usability.
+## Comparison and Method Details
 
+### Comparison with Traditional Methods
+
+The following figure illustrates the comparison between CONTINA and traditional methods:
+
+![Comparison with Traditional Methods](/compare.png)
+
+### CONTINA Method Details
+
+The figure below provides an overview of the CONTINA method:
+
+![CONTINA Method Details](Contina.png)
 ## Repository Overview
 
 This repository contains the implementation of CONTINA and experiments described in the paper. All code and data required to reproduce the results are included (based on pytorch).
