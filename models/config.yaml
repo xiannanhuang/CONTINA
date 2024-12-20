@@ -1,0 +1,30 @@
+data_dir: ./data/NYCtaxi  # Directory where your data files are stored
+model_dir: ./saved_models  # Directory to save trained models
+checkpoint_dir: ./checkpoints  # Directory to save model checkpoints
+num_nodes: 265  # Number of nodes (or features) in your data
+batch_size: 128  # Batchsize for training
+num_epochs: 100  # Number of training epochs
+learning_rate: 0.005  # Learning rate for the optimizer
+domain_dim : 4
+train_months : 96
+input_window : 6
+log_dir : ./logs/nyc_taxi
+device: cuda:0  # Use 'cuda' for GPU or 'cpu' for CPU
+adj_mx_file : adjacency_matrix.npy
+model_name : STGCN
+feature_dim_out: 16
+# Learning rate scheduler configuration
+# lr_scheduler:
+#   type: plateau  # Type of learning rate scheduler (step or plateau)
+#   step_size: 2  # Step size for learning rate decay (used when type is 'step')
+#   gamma: 0.9  # Multiplicative factor for learning rate decay (used when type is 'step')
+#   factor: 0.5  # Factor by which the learning rate will be reduced (used when type is 'plateau')
+#   patience: 5  # Number of epochs with no improvement after which learning rate will be reduced (used when type is 'plateau')
+dataset_name : taxi
+domain_index : True
+reg_2: 1
+ad_adjmat :  False
+align_data: False
+weighted_train:  True
+withvil :  True
+dropout: 0.3

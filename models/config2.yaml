@@ -1,0 +1,19 @@
+data_dir: ./data/nycbike  # Directory where your data files are stored
+model_dir: ./saved_models  # Directory to save trained models
+checkpoint_dir: ./checkpoints  # Directory to save model checkpoints
+num_nodes: 200  # Number of nodes (or features) in your data
+batch_size: 128  # Batchsize for training
+num_epochs: 300  # Number of training epochs
+learning_rate: 0.005  # Learning rate for the optimizer
+# log_dir : ./logs/nycbike
+dataset_name : bike
+# Model-specific configuration
+# feature_dim_in: 2
+feature_dim_out: 16
+domain_dim : 4
+dropout: 0.3
+input_window : 6
+device: cuda:0  # Use 'cuda' for GPU or 'cpu' for CPU
+train_months: 96
+adj_mx_file : bike_adjacency_matrix.npy
+model_name : DCRNN
