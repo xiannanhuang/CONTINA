@@ -17,13 +17,16 @@ Existing methods for confidence interval modeling often assume that traffic patt
 
 The following figure illustrates the comparison between CONTINA and traditional methods:
 
-![Comparison with Traditional Methods](/compare.png)
-
+<p align="center">
+  <img src="compare.png" alt="Comparison with Traditional Methods">
+</p>
 ### CONTINA Method Details
 
 The figure below provides an overview of the CONTINA method:
 
-![CONTINA Method Details](Contina.png)
+<p align="center">
+  <img src="Ccontina.png" alt="CONTINA Method Details">
+</p>
 ## Repository Overview
 
 This repository contains the implementation of CONTINA and experiments described in the paper. All code and data required to reproduce the results are included (based on pytorch).
