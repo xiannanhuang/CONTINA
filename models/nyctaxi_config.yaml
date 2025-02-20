@@ -1,0 +1,12 @@
+data_dir: ./data/NYCtaxi  # Directory where your data files are stored
+model_dir: ./saved_models  # Directory to save trained models
+checkpoint_dir: ./checkpoints  # Directory to save model checkpoints
+num_nodes: 265  # Number of nodes (or features) in your data
+batch_size: 128  # Batchsize for training
+num_epochs: 100  # Number of training epochs
+learning_rate: 0.005  # Learning rate for the optimizer
+input_window : 6
+device: cuda:0 # Use 'cuda' for GPU or 'cpu' for CPU
+dataset_name : nyctaxi
+dropout: 0.3
+feature_dim_out: 16
