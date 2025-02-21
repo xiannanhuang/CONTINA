@@ -4,7 +4,7 @@ Accurate short-term traffic demand prediction is critical for the operation of t
 ## Algorithm
 
 ## Main results
-**| Dataset |  time  | metric |   QR   | MC-dropout | boostrap |   MIS  | DESQRUQ | UATGCN | ProbGNN | QuanTraffic |   CP   |   ACI  |     QCP    |  DtACI |   CONTINA  |
+| Dataset |  time  | metric |   QR   | MC-dropout | boostrap |   MIS  | DESQRUQ | UATGCN | ProbGNN | QuanTraffic |   CP   |   ACI  |     QCP    |  DtACI |   CONTINA  |
 |---------|:------:|:------:|:------:|:----------:|:--------:|:------:|:-------:|:------:|:-------:|:-----------:|:------:|:------:|:----------:|:------:|:----------:|
 | NYCbike | 1month |   cov  |  89.6% |    54.8%   |   30.8%  |  88.7% |  91.7%  |  91.7% |  93.1%  |    91.3%    |  89.2% |  89.8% |    90.0%   |  89.6% |    89.6%   |
 |         |        | length | 0.265  |   0.218    |  0.084   | 0.278  |  0.284  | 0.284  |  0.306  |    0.288    | 0.285  | 0.300  | **0.266 ** | 0.291  |   0.276    |
@@ -66,4 +66,4 @@ Accurate short-term traffic demand prediction is critical for the operation of t
 |         |   AVG  |   cov  |  90.2% |    48.0%   |   43.7%  |  91.2% |  93.0%  |  92.7% |  94.3%  |    89.4%    |  90.2% |  89.9% |    90.8%   |  90.0% |    89.8%   |
 |         |        | length | 0.227  |   0.305    |  0.088   | 0.241  |  0.242  | 0.307  |  0.338  |    0.247    | 0.288  | 0.300  |   0.228    | 0.281  | **0.238 ** |
 |         |        |  minRC |  83.4% |    17.0%   |   27.1%  |  85.3% |  86.8%  |  87.3% |  90.5%  |    86.0%    |  86.1% |  87.5% |    83.1%   |  87.1% |    89.3%   |
-|   1st   |        |        |    0   |      0     |     0    |    0   |    0    |    0   |    0    |      0      |    0   |    0   |      1     |    0   |   **19**   |**
+|   1st   |        |        |    0   |      0     |     0    |    0   |    0    |    0   |    0    |      0      |    0   |    0   |      1     |    0   |   **19**   |
