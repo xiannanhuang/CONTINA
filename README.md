@@ -4,6 +4,7 @@ Accurate short-term traffic demand prediction is critical for the operation of t
 ## Algorithm
 
 ## Main results
+
 | Dataset |  time  | metric |   QR   | MC-dropout | boostrap |   MIS  | DESQRUQ | UATGCN | ProbGNN | QuanTraffic |   CP   |   ACI  |     QCP    |  DtACI |   CONTINA  |
 |---------|:------:|:------:|:------:|:----------:|:--------:|:------:|:-------:|:------:|:-------:|:-----------:|:------:|:------:|:----------:|:------:|:----------:|
 | NYCbike | 1month |   cov  |  89.6% |    54.8%   |   30.8%  |  88.7% |  91.7%  |  91.7% |  93.1%  |    91.3%    |  89.2% |  89.8% |    90.0%   |  89.6% |    89.6%   |
