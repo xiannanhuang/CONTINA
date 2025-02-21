@@ -2,39 +2,6 @@
 ## Abstract
 Accurate short-term traffic demand prediction is critical for the operation of traffic system. Besides point estimation, confidence interval of the prediction is also important because many models about traffic operation, such as shared bike rebalancing and taxi dispatching, take the uncertainty of future demand into account and require confidence interval as the input. However, existing methods require strict assumptions such as unchanging traffic pattern and correct model specification ensure that enough coverage. Therefore, the confidence intervals provided could be invalid, especially in a changing traffic environment. To fill this gap, we propose a simple but efficient method, CONTINA (Conformal Traffic Intervals with Adaptation). The main idea of this method is collecting errors of interval during deployment, and the interval will be widened in the next step if the errors are larger, and shorted otherwise. Besides, we theoretically prove that the coverage of the confidence intervals provided by our method can converge to the target coverage level. Experiments across four real-world datasets and prediction models demonstrate that our method can provide valid confidence interval with shorter length. Our method is able to help traffic management personnel develop more reasonable operation plan in practice. 
 
-## Algorithm: Conformal Traffic Intervals with Adaptation
-
-#### Input:
-- Training dataset $D_1$,
-- Validation dataset $D_2$,
-- Confidence level $\alpha$.
-
-#### Output:
-Obtain test data $(x_{t,i,j}, y_{t,i,j})$ one by one in future $T$ steps.
-
----
-
-1. **Train** quantile prediction model $M$ using $D_1$.
-
-2. **For** $i \in [1, n]$:
-    - **For** $j \in \{1, 2\}$:
-        - Obtain error set $E_{1,i,j}$ in $D_2$ using Eq.1.
-    - Initialize $\alpha_{1,i} = \alpha$, $v_{1,i} = 0$.
-
-3. **For** $t \in [1, T]$:
-    - **For** $i \in [1, n]$:
-        - **For** $j \in \{1, 2\}$:
-            - Observe $x_{t,i,j}$.
-            - Obtain predicted quantiles $y_{t,i,j,\alpha/2}$, $y_{t,i,j,1-\alpha/2}$ using model $M$.
-            - Output predicted interval:
-              $$
-              C_{1-\alpha}(x_{t,i,j}) = \left[y_{t,i,j,\alpha/2} - Q_{1-\alpha_{t,i}}(E_{t,i,j}), \; y_{t,i,j,1-\alpha/2} + Q_{1-\alpha_{t,i}}(E_{t,i,j})\right].
-              $$
-            - Observe $y_{t,i,j}$.
-            - Calculate $e_{t,i,j}$ using Eq.1.
-            - Obtain $E_{t+1,i,j}$ by adding $e_{t,i,j}$ to $E_{t,i,j}$ and deleting the oldest element of it.
-        - Calculate error $err_{t,i}$ using Eq.5.
-        - Obtain $\alpha_{t+1,i}$, $v_{t+1,i}$ using Eq.7 and Eq.8.
 ## Main results
 
 | Dataset |  time  | metric |   QR   | MC-dropout | boostrap |   MIS  | DESQRUQ | UATGCN | ProbGNN | QuanTraffic |   CP   |   ACI  |     QCP    |  DtACI |   CONTINA  |
