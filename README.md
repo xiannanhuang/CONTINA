@@ -1,8 +1,8 @@
 # CONTINA (Conformal Traffic Intervals with Adaptation): Confidence Interval for Traffic Demand Prediction with Coverage Guarantee 
 ## Abstract
 Accurate short-term traffic demand prediction is critical for the operation of traffic system. Besides point estimation, confidence interval of the prediction is also important because many models about traffic operation, such as shared bike rebalancing and taxi dispatching, take the uncertainty of future demand into account and require confidence interval as the input. However, existing methods require strict assumptions such as unchanging traffic pattern and correct model specification ensure that enough coverage. Therefore, the confidence intervals provided could be invalid, especially in a changing traffic environment. To fill this gap, we propose a simple but efficient method, CONTINA (Conformal Traffic Intervals with Adaptation). The main idea of this method is collecting errors of interval during deployment, and the interval will be widened in the next step if the errors are larger, and shorted otherwise. Besides, we theoretically prove that the coverage of the confidence intervals provided by our method can converge to the target coverage level. Experiments across four real-world datasets and prediction models demonstrate that our method can provide valid confidence interval with shorter length. Our method is able to help traffic management personnel develop more reasonable operation plan in practice. 
-## Algorithm
-### Algorithm: Conformal Traffic Intervals with Adaptation
+
+## Algorithm: Conformal Traffic Intervals with Adaptation
 
 #### Input:
 - Training dataset $D_1$,
@@ -101,4 +101,6 @@ Obtain test data $(x_{t,i,j}, y_{t,i,j})$ one by one in future $T$ steps.
 |         |        |  minRC |  83.4% |    17.0%   |   27.1%  |  85.3% |  86.8%  |  87.3% |  90.5%  |    86.0%    |  86.1% |  87.5% |    83.1%   |  87.1% |    89.3%   |
 |   1st   |        |        |    0   |      0     |     0    |    0   |    0    |    0   |    0    |      0      |    0   |    0   |      1     |    0   |   **19**   |
 
+## How to run the algorithm?
 
+Just install pytorch and run AQCI.ipynb is OK. Pretained model and dataset can be downloaded.
