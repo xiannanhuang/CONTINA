@@ -68,6 +68,6 @@ Accurate short-term traffic demand prediction is critical for the operation of t
 |         |        |  minRC |  83.4% |    17.0%   |   27.1%  |  85.3% |  86.8%  |  87.3% |  90.5%  |    86.0%    |  86.1% |  87.5% |    83.1%   |  87.1% |    89.3%   |
 |   1st   |        |        |    0   |      0     |     0    |    0   |    0    |    0   |    0    |      0      |    0   |    0   |      1     |    0   |   **19**   |
 
-## How to run the algorithm?
+## How to reproduce this algorithm?
 
 Just install pytorch and run AQCI.ipynb is OK. Pretained model and dataset can be downloaded.
