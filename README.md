@@ -70,4 +70,4 @@ Accurate short-term traffic demand prediction is critical for the operation of t
 
 ## How to reproduce this algorithm?
 
-Just install pytorch and run AQCI.ipynb is OK. Pretained model and dataset can be downloaded.
+Just install pytorch and run CONTINA.ipynb is OK. Pretained model and dataset can be downloaded.
